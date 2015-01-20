@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E0DA6021A6DF865005B715C /* CrashHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0DA6011A6DF865005B715C /* CrashHandler.m */; };
+		6EE0BDC61A6DD63900013B00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE0BDC51A6DD63900013B00 /* AppDelegate.swift */; };
+		6EE0BDC91A6DD63900013B00 /* Ronda.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6EE0BDC71A6DD63900013B00 /* Ronda.xcdatamodeld */; };
+		6EE0BDCB1A6DD63900013B00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE0BDCA1A6DD63900013B00 /* ViewController.swift */; };
+		6EE0BDCE1A6DD63900013B00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EE0BDCC1A6DD63900013B00 /* Main.storyboard */; };
+		6EE0BDDF1A6DD63900013B00 /* RondaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE0BDDE1A6DD63900013B00 /* RondaTests.swift */; };
+		6EE0BE1D1A6DD87100013B00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE0BE1B1A6DD86300013B00 /* UIKit.framework */; };
+		6EE0BE1E1A6DD87100013B00 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE0BE191A6DD85A00013B00 /* SystemConfiguration.framework */; };
+		6EE0BE1F1A6DD87100013B00 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE0BE171A6DD84E00013B00 /* StoreKit.framework */; };
+		6EE0BE201A6DD87100013B00 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE0BE151A6DD84900013B00 /* Security.framework */; };
+		6EE0BE211A6DD87100013B00 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE0BE131A6DD83D00013B00 /* QuartzCore.framework */; };
+		6EE0BE221A6DD87100013B00 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE0BE111A6DD83800013B00 /* MobileCoreServices.framework */; };
+		6EE0BE231A6DD87100013B00 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE0BE0F1A6DD82F00013B00 /* libstdc++.6.dylib */; };
+		6EE0BE241A6DD87100013B00 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE0BE0D1A6DD81F00013B00 /* libz.1.1.3.dylib */; };
+		6EE0BE251A6DD87100013B00 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE0BE0B1A6DD81500013B00 /* libsqlite3.dylib */; };
+		6EE0BE261A6DD87100013B00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE0BE091A6DD80200013B00 /* Foundation.framework */; };
+		6EE0BE271A6DD87100013B00 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE0BE071A6DD7FB00013B00 /* CoreFoundation.framework */; };
+		6EE0BE281A6DD87100013B00 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE0BE051A6DD7F300013B00 /* CoreLocation.framework */; };
+		6EE0BE291A6DD87100013B00 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE0BE031A6DD7ED00013B00 /* CoreGraphics.framework */; };
+		6EE0BE2A1A6DD87100013B00 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE0BE011A6DD7D600013B00 /* CFNetwork.framework */; };
+		6EE0BE2B1A6DD87100013B00 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE0BDFF1A6DD7D100013B00 /* AudioToolbox.framework */; };
+		6EE0BE2C1A6DD87100013B00 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE0BDFD1A6DD7C900013B00 /* Social.framework */; };
+		6EE0BE2D1A6DD87100013B00 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE0BDFB1A6DD7C400013B00 /* AdSupport.framework */; };
+		6EE0BE2E1A6DD87100013B00 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE0BDF91A6DD7BB00013B00 /* Accounts.framework */; };
+		6EE0BE2F1A6DD87700013B00 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE0BDEE1A6DD79000013B00 /* Bolts.framework */; };
+		6EE0BE301A6DD87700013B00 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE0BDEF1A6DD79000013B00 /* ParseCrashReporting.framework */; };
+		6EE0BE311A6DD87700013B00 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE0BDF01A6DD79000013B00 /* ParseFacebookUtils.framework */; };
+		6EE0BE321A6DD87700013B00 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE0BDF11A6DD79000013B00 /* ParseUI.framework */; };
+		6EE0BE331A6DD87700013B00 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE0BDF21A6DD79000013B00 /* Parse.framework */; };
+		6EE0BE341A6DD87F00013B00 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE0BDEB1A6DD77200013B00 /* FacebookSDK.framework */; };
+		6EE0BE351A6DD87F00013B00 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EE0BDE81A6DD64700013B00 /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6EE0BDD91A6DD63900013B00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EE0BDB81A6DD63900013B00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EE0BDBF1A6DD63900013B00;
+			remoteInfo = Ronda;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6E0DA6001A6DF865005B715C /* CrashHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashHandler.h; sourceTree = "<group>"; };
+		6E0DA6011A6DF865005B715C /* CrashHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashHandler.m; sourceTree = "<group>"; };
+		6EE0BDC01A6DD63900013B00 /* Ronda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ronda.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EE0BDC41A6DD63900013B00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EE0BDC51A6DD63900013B00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6EE0BDC81A6DD63900013B00 /* Ronda.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ronda.xcdatamodel; sourceTree = "<group>"; };
+		6EE0BDCA1A6DD63900013B00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6EE0BDCD1A6DD63900013B00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6EE0BDD81A6DD63900013B00 /* RondaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RondaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EE0BDDD1A6DD63900013B00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EE0BDDE1A6DD63900013B00 /* RondaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RondaTests.swift; sourceTree = "<group>"; };
+		6EE0BDE81A6DD64700013B00 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6EE0BDEB1A6DD77200013B00 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		6EE0BDEE1A6DD79000013B00 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		6EE0BDEF1A6DD79000013B00 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		6EE0BDF01A6DD79000013B00 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		6EE0BDF11A6DD79000013B00 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		6EE0BDF21A6DD79000013B00 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		6EE0BDF91A6DD7BB00013B00 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		6EE0BDFB1A6DD7C400013B00 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		6EE0BDFD1A6DD7C900013B00 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		6EE0BDFF1A6DD7D100013B00 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6EE0BE011A6DD7D600013B00 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		6EE0BE031A6DD7ED00013B00 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6EE0BE051A6DD7F300013B00 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6EE0BE071A6DD7FB00013B00 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		6EE0BE091A6DD80200013B00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6EE0BE0B1A6DD81500013B00 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		6EE0BE0D1A6DD81F00013B00 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		6EE0BE0F1A6DD82F00013B00 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
+		6EE0BE111A6DD83800013B00 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		6EE0BE131A6DD83D00013B00 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6EE0BE151A6DD84900013B00 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6EE0BE171A6DD84E00013B00 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		6EE0BE191A6DD85A00013B00 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6EE0BE1B1A6DD86300013B00 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6EE0BE371A6DD90A00013B00 /* Ronda-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ronda-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6EE0BDBD1A6DD63900013B00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EE0BE1D1A6DD87100013B00 /* UIKit.framework in Frameworks */,
+				6EE0BE1E1A6DD87100013B00 /* SystemConfiguration.framework in Frameworks */,
+				6EE0BE1F1A6DD87100013B00 /* StoreKit.framework in Frameworks */,
+				6EE0BE201A6DD87100013B00 /* Security.framework in Frameworks */,
+				6EE0BE211A6DD87100013B00 /* QuartzCore.framework in Frameworks */,
+				6EE0BE221A6DD87100013B00 /* MobileCoreServices.framework in Frameworks */,
+				6EE0BE231A6DD87100013B00 /* libstdc++.6.dylib in Frameworks */,
+				6EE0BE241A6DD87100013B00 /* libz.1.1.3.dylib in Frameworks */,
+				6EE0BE251A6DD87100013B00 /* libsqlite3.dylib in Frameworks */,
+				6EE0BE261A6DD87100013B00 /* Foundation.framework in Frameworks */,
+				6EE0BE271A6DD87100013B00 /* CoreFoundation.framework in Frameworks */,
+				6EE0BE281A6DD87100013B00 /* CoreLocation.framework in Frameworks */,
+				6EE0BE291A6DD87100013B00 /* CoreGraphics.framework in Frameworks */,
+				6EE0BE2A1A6DD87100013B00 /* CFNetwork.framework in Frameworks */,
+				6EE0BE2B1A6DD87100013B00 /* AudioToolbox.framework in Frameworks */,
+				6EE0BE2C1A6DD87100013B00 /* Social.framework in Frameworks */,
+				6EE0BE2D1A6DD87100013B00 /* AdSupport.framework in Frameworks */,
+				6EE0BE2E1A6DD87100013B00 /* Accounts.framework in Frameworks */,
+				6EE0BE2F1A6DD87700013B00 /* Bolts.framework in Frameworks */,
+				6EE0BE301A6DD87700013B00 /* ParseCrashReporting.framework in Frameworks */,
+				6EE0BE311A6DD87700013B00 /* ParseFacebookUtils.framework in Frameworks */,
+				6EE0BE321A6DD87700013B00 /* ParseUI.framework in Frameworks */,
+				6EE0BE331A6DD87700013B00 /* Parse.framework in Frameworks */,
+				6EE0BE341A6DD87F00013B00 /* FacebookSDK.framework in Frameworks */,
+				6EE0BE351A6DD87F00013B00 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EE0BDD51A6DD63900013B00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E0DA5FF1A6DF865005B715C /* CrashHandlerClass */ = {
+			isa = PBXGroup;
+			children = (
+				6E0DA6001A6DF865005B715C /* CrashHandler.h */,
+				6E0DA6011A6DF865005B715C /* CrashHandler.m */,
+			);
+			path = CrashHandlerClass;
+			sourceTree = "<group>";
+		};
+		6EE0BDB71A6DD63900013B00 = {
+			isa = PBXGroup;
+			children = (
+				6EE0BDC21A6DD63900013B00 /* Ronda */,
+				6EE0BDDB1A6DD63900013B00 /* RondaTests */,
+				6EE0BDC11A6DD63900013B00 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6EE0BDC11A6DD63900013B00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6EE0BDC01A6DD63900013B00 /* Ronda.app */,
+				6EE0BDD81A6DD63900013B00 /* RondaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6EE0BDC21A6DD63900013B00 /* Ronda */ = {
+			isa = PBXGroup;
+			children = (
+				6EE0BE361A6DD8F400013B00 /* Library */,
+				6EE0BDEA1A6DD6EA00013B00 /* Frameworks */,
+				6EE0BDC51A6DD63900013B00 /* AppDelegate.swift */,
+				6EE0BDCA1A6DD63900013B00 /* ViewController.swift */,
+				6EE0BDCC1A6DD63900013B00 /* Main.storyboard */,
+				6EE0BDC71A6DD63900013B00 /* Ronda.xcdatamodeld */,
+				6EE0BDC31A6DD63900013B00 /* Supporting Files */,
+			);
+			path = Ronda;
+			sourceTree = "<group>";
+		};
+		6EE0BDC31A6DD63900013B00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6EE0BDC41A6DD63900013B00 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6EE0BDDB1A6DD63900013B00 /* RondaTests */ = {
+			isa = PBXGroup;
+			children = (
+				6EE0BDDE1A6DD63900013B00 /* RondaTests.swift */,
+				6EE0BDDC1A6DD63900013B00 /* Supporting Files */,
+			);
+			path = RondaTests;
+			sourceTree = "<group>";
+		};
+		6EE0BDDC1A6DD63900013B00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6EE0BDDD1A6DD63900013B00 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6EE0BDEA1A6DD6EA00013B00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EE0BDF81A6DD79800013B00 /* System */,
+				6EE0BDED1A6DD78300013B00 /* Parse */,
+				6EE0BDEB1A6DD77200013B00 /* FacebookSDK.framework */,
+				6EE0BDE81A6DD64700013B00 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6EE0BDED1A6DD78300013B00 /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				6EE0BDEE1A6DD79000013B00 /* Bolts.framework */,
+				6EE0BDEF1A6DD79000013B00 /* ParseCrashReporting.framework */,
+				6EE0BDF01A6DD79000013B00 /* ParseFacebookUtils.framework */,
+				6EE0BDF11A6DD79000013B00 /* ParseUI.framework */,
+				6EE0BDF21A6DD79000013B00 /* Parse.framework */,
+			);
+			name = Parse;
+			sourceTree = "<group>";
+		};
+		6EE0BDF81A6DD79800013B00 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				6EE0BE1B1A6DD86300013B00 /* UIKit.framework */,
+				6EE0BE191A6DD85A00013B00 /* SystemConfiguration.framework */,
+				6EE0BE171A6DD84E00013B00 /* StoreKit.framework */,
+				6EE0BE151A6DD84900013B00 /* Security.framework */,
+				6EE0BE131A6DD83D00013B00 /* QuartzCore.framework */,
+				6EE0BE111A6DD83800013B00 /* MobileCoreServices.framework */,
+				6EE0BE0F1A6DD82F00013B00 /* libstdc++.6.dylib */,
+				6EE0BE0D1A6DD81F00013B00 /* libz.1.1.3.dylib */,
+				6EE0BE0B1A6DD81500013B00 /* libsqlite3.dylib */,
+				6EE0BE091A6DD80200013B00 /* Foundation.framework */,
+				6EE0BE071A6DD7FB00013B00 /* CoreFoundation.framework */,
+				6EE0BE051A6DD7F300013B00 /* CoreLocation.framework */,
+				6EE0BE031A6DD7ED00013B00 /* CoreGraphics.framework */,
+				6EE0BE011A6DD7D600013B00 /* CFNetwork.framework */,
+				6EE0BDFF1A6DD7D100013B00 /* AudioToolbox.framework */,
+				6EE0BDFD1A6DD7C900013B00 /* Social.framework */,
+				6EE0BDFB1A6DD7C400013B00 /* AdSupport.framework */,
+				6EE0BDF91A6DD7BB00013B00 /* Accounts.framework */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		6EE0BE361A6DD8F400013B00 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				6E0DA5FF1A6DF865005B715C /* CrashHandlerClass */,
+				6EE0BE371A6DD90A00013B00 /* Ronda-Bridging-Header.h */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6EE0BDBF1A6DD63900013B00 /* Ronda */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EE0BDE21A6DD63900013B00 /* Build configuration list for PBXNativeTarget "Ronda" */;
+			buildPhases = (
+				6EE0BDBC1A6DD63900013B00 /* Sources */,
+				6EE0BDBD1A6DD63900013B00 /* Frameworks */,
+				6EE0BDBE1A6DD63900013B00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ronda;
+			productName = Ronda;
+			productReference = 6EE0BDC01A6DD63900013B00 /* Ronda.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6EE0BDD71A6DD63900013B00 /* RondaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EE0BDE51A6DD63900013B00 /* Build configuration list for PBXNativeTarget "RondaTests" */;
+			buildPhases = (
+				6EE0BDD41A6DD63900013B00 /* Sources */,
+				6EE0BDD51A6DD63900013B00 /* Frameworks */,
+				6EE0BDD61A6DD63900013B00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EE0BDDA1A6DD63900013B00 /* PBXTargetDependency */,
+			);
+			name = RondaTests;
+			productName = RondaTests;
+			productReference = 6EE0BDD81A6DD63900013B00 /* RondaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6EE0BDB81A6DD63900013B00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = eCloud;
+				TargetAttributes = {
+					6EE0BDBF1A6DD63900013B00 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 423D3Q52MA;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					6EE0BDD71A6DD63900013B00 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 6EE0BDBF1A6DD63900013B00;
+					};
+				};
+			};
+			buildConfigurationList = 6EE0BDBB1A6DD63900013B00 /* Build configuration list for PBXProject "Ronda" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6EE0BDB71A6DD63900013B00;
+			productRefGroup = 6EE0BDC11A6DD63900013B00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6EE0BDBF1A6DD63900013B00 /* Ronda */,
+				6EE0BDD71A6DD63900013B00 /* RondaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6EE0BDBE1A6DD63900013B00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EE0BDCE1A6DD63900013B00 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EE0BDD61A6DD63900013B00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EE0BDBC1A6DD63900013B00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E0DA6021A6DF865005B715C /* CrashHandler.m in Sources */,
+				6EE0BDCB1A6DD63900013B00 /* ViewController.swift in Sources */,
+				6EE0BDC91A6DD63900013B00 /* Ronda.xcdatamodeld in Sources */,
+				6EE0BDC61A6DD63900013B00 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EE0BDD41A6DD63900013B00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EE0BDDF1A6DD63900013B00 /* RondaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6EE0BDDA1A6DD63900013B00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EE0BDBF1A6DD63900013B00 /* Ronda */;
+			targetProxy = 6EE0BDD91A6DD63900013B00 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6EE0BDCC1A6DD63900013B00 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6EE0BDCD1A6DD63900013B00 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6EE0BDE01A6DD63900013B00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6EE0BDE11A6DD63900013B00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6EE0BDE31A6DD63900013B00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Ronda",
+				);
+				INFOPLIST_FILE = Ronda/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ronda/Ronda-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		6EE0BDE41A6DD63900013B00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Ronda",
+				);
+				INFOPLIST_FILE = Ronda/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ronda/Ronda-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		6EE0BDE61A6DD63900013B00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RondaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ronda.app/Ronda";
+			};
+			name = Debug;
+		};
+		6EE0BDE71A6DD63900013B00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RondaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ronda.app/Ronda";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6EE0BDBB1A6DD63900013B00 /* Build configuration list for PBXProject "Ronda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EE0BDE01A6DD63900013B00 /* Debug */,
+				6EE0BDE11A6DD63900013B00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EE0BDE21A6DD63900013B00 /* Build configuration list for PBXNativeTarget "Ronda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EE0BDE31A6DD63900013B00 /* Debug */,
+				6EE0BDE41A6DD63900013B00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EE0BDE51A6DD63900013B00 /* Build configuration list for PBXNativeTarget "RondaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EE0BDE61A6DD63900013B00 /* Debug */,
+				6EE0BDE71A6DD63900013B00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6EE0BDC71A6DD63900013B00 /* Ronda.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6EE0BDC81A6DD63900013B00 /* Ronda.xcdatamodel */,
+			);
+			currentVersion = 6EE0BDC81A6DD63900013B00 /* Ronda.xcdatamodel */;
+			path = Ronda.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6EE0BDB81A6DD63900013B00 /* Project object */;
+}
